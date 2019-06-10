@@ -12,6 +12,7 @@ RecyclerView rv;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         rv=findViewById(R.id.recycler);
+        // images and strings arrays
         int images[]={R.drawable.cupcake,R.drawable.donut,R.drawable.eclair,R.drawable.froyo,R.drawable.ginger,R.drawable.honey,R.drawable.icecream,R.drawable.jelly,R.drawable.kitkat,R.drawable.lollipop,R.drawable.marsh};
         String names[]={"Cupcake","Donut","Eclair","Froyo","Ginger","Honey","Icecream","Jelly","Kitkat","Lollipop","Marsh"};
         MyAdapter adapter=new MyAdapter(this,images,names);
