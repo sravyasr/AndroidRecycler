@@ -12,6 +12,7 @@ public class NewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new);
         tv=findViewById(R.id.textview);
+        //Declaring a string and getting the assigned values using a key called "name"
         String s=getIntent().getStringExtra("name");
         tv.setText(s);
     }
