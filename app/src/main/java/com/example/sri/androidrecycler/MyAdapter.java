@@ -55,6 +55,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             tv.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    //Passing data between activities using intents and putextra
                     Intent i=new Intent(ct,NewActivity.class);
                     i.putExtra("name",mynames[getLayoutPosition()]);
                     ct.startActivity(i);
